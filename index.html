@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quán Hưng Ký</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f3ece4] text-[#3b1c17] text-base md:text-lg">
+
+    <!-- QR Desktop -->
+    <div class="hidden md:block fixed right-6 top-6 bg-white p-3 rounded-lg shadow text-center">
+      <img
+        src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_payment.jpg"
+        class="w-28 mx-auto"
+      />
+      <p class="text-xs mt-2 font-semibold">Quét QR / Scan to pay</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+
+      <!-- Header -->
+      <section class="text-center py-6 md:py-8">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-widest">
+          QUÁN HƯNG KÝ
+        </h1>
+        <p class="text-sm md:text-xl text-gray-600">
+          Hủ Tiếu - Mì Xíu - Phở
+        </p>
+        <p id="openStatus" class="mt-2 font-semibold text-lg"></p>
+        <!-- <p id="openStatus2" class="mt-2 font-semibold text-lg">17:30 - 23:00</p> -->
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-8 md:gap-10 mt-4">
+
+        <!-- MAIN -->
+        <div>
+          <div class="bg-yellow-400 inline-block px-4 py-2 font-bold mb-4">
+            MÓN CHÍNH / MAIN DISHES
+          </div>
+
+          <div class="space-y-6">
+
+            <!-- Mì Xíu -->
+            <div class="border-b pb-4">
+              <div class="flex gap-4">
+                <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/mi-xiu-hoanh-thanh_balpvo.jpg"
+                     class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-lg shadow flex-shrink-0"/>
+                <div class="flex-1 min-w-0">
+                  <div class="text-xl md:text-2xl font-bold">
+                    Mì Xíu (Khô / Nước)
+                  </div>
+                  <div class="text-xs md:text-sm text-gray-600 mt-1">
+                    Bao gồm: Thịt xíu, hoành thánh, hành phi, hành lá, rau sống, giá đỗ
+                    <br />
+                    (Char siu, wonton, fried shallots, scallions, fresh vegetables, bean sprouts)
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">KHÔ (DRY)</p>
+                  <p>30k / 35k</p>
+                </div>
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">NƯỚC (SOUP)</p>
+                  <p>30k / 35k</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hủ Tiếu -->
+            <div class="border-b pb-4">
+              <div class="flex gap-4">
+                <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329930/hu-tieu_vadwco.jpg"
+                     class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-lg shadow flex-shrink-0"/>
+                <div class="flex-1 min-w-0">
+                  <div class="text-xl md:text-2xl font-bold">
+                    Hủ Tiếu (Khô / Nước)
+                  </div>
+                  <div class="text-xs md:text-sm text-gray-600 mt-1">
+                    Bao gồm: Thịt xíu, xương heo có thịt, hành phi, hành lá, rau sống, giá đỗ
+                    <br />
+                    (Char siu, meaty pork bones, fried shallots, scallions, fresh vegetables, bean sprouts)
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">KHÔ (DRY)</p>
+                  <p>30k / 35k</p>
+                </div>
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">NƯỚC (SOUP)</p>
+                  <p>30k / 35k</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phở -->
+            <div class="border-b pb-4">
+              <div class="flex gap-4">
+                <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/pho_e5mtwv.webp"
+                     class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-lg shadow flex-shrink-0"/>
+                <div class="flex-1 min-w-0">
+                  <div class="text-xl md:text-2xl font-bold">
+                    Phở
+                  </div>
+                  <div class="text-xs md:text-sm text-gray-600 mt-1">
+                    Phở Nước (Soup): Tái, nạm, bò viên, hành lá, rau sống, giá đỗ
+                    <br />
+                    (Rare beef, brisket, beef balls, scallions, fresh vegetables, bean sprouts)
+                    <br /><br />
+                    Phở Khô (Dry): Giống hủ tiếu khô
+                    <br />
+                    (Served like dry rice noodles with char siu, meaty pork bones, fried shallots, scallions, fresh vegetables, bean sprouts)
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">KHÔ (DRY)</p>
+                  <p>30k / 35k</p>
+                </div>
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">NƯỚC (SOUP)</p>
+                  <p>30k / 35k</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXTRA -->
+        <div>
+          <div class="bg-yellow-400 inline-block px-4 py-2 font-bold mb-4">
+            THÊM / EXTRA
+          </div>
+
+          <div class="space-y-4">
+
+            <!-- Hoành thánh -->
+            <div class="flex items-center gap-4 border-b pb-4">
+              <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/hoanh-thanh_z1ln09.jpg"
+                   class="w-20 h-20 object-cover rounded-lg shadow flex-shrink-0"/>
+              <div class="flex-1 flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-base">Hoành thánh (Wonton)</p>
+                  <p class="text-sm text-gray-500">Nhân thịt tươi</p>
+                </div>
+                <span class="font-bold text-lg">10k</span>
+              </div>
+            </div>
+
+            <!-- Bò viên -->
+            <div class="flex items-center gap-4 border-b pb-4">
+              <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/bo-vien_ynutzc.jpg"
+                   class="w-20 h-20 object-cover rounded-lg shadow flex-shrink-0"/>
+              <div class="flex-1 flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-base">Bò viên (Beef balls)</p>
+                  <p class="text-sm text-gray-500">Viên bò dai ngon</p>
+                </div>
+                <span class="font-bold text-lg">10k</span>
+              </div>
+            </div>
+
+            <!-- Xương -->
+            <div class="flex items-center gap-4 border-b pb-4">
+              <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329932/xuong_aex972.jpg"
+                   class="w-20 h-20 object-cover rounded-lg shadow flex-shrink-0"/>
+              <div class="flex-1 flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-base">Xương (Meaty pork bones)</p>
+                  <p class="text-sm text-gray-500">Xương hầm đậm đà</p>
+                </div>
+                <span class="font-bold text-lg">10k</span>
+              </div>
+            </div>
+
+            <!-- Nạm -->
+            <div class="flex items-center gap-4 border-b pb-4">
+              <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/nam_dx5vog.jpg"
+                   class="w-20 h-20 object-cover rounded-lg shadow flex-shrink-0"/>
+              <div class="flex-1 flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-base">Nạm (Brisket)</p>
+                  <p class="text-sm text-gray-500">Nạm hầm đậm đà</p>
+                </div>
+                <span class="font-bold text-lg">10k</span>
+              </div>
+            </div>
+
+            <!-- Thịt xíu -->
+            <div class="flex items-center gap-4 border-b pb-4">
+              <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/thit-xiu_tlxpln.jpg"
+                   class="w-20 h-20 object-cover rounded-lg shadow flex-shrink-0"/>
+              <div class="flex-1 flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-base">Thịt xíu (Char siu meat)</p>
+                  <p class="text-sm text-gray-500">Thịt xíu thơm ngon</p>
+                </div>
+                <span class="font-bold text-lg">10k</span>
+              </div>
+            </div>
+
+            <!-- Tái -->
+            <div class="flex items-center gap-4 border-b pb-4">
+              <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1776329931/tai_tkmkgh.webp"
+                   class="w-20 h-20 object-cover rounded-lg shadow flex-shrink-0"/>
+              <div class="flex-1 flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-base">Tái (Rare beef)</p>
+                  <p class="text-sm text-gray-500">Tái hầm đậm đà</p>
+                </div>
+                <span class="font-bold text-lg">10k</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Map -->
+          <div class="mt-6 md:mb-6 mb-0">
+            <iframe
+              class="w-full h-72 rounded-lg shadow"
+              src="https://www.google.com/maps?q=16.058063,108.2170171&z=18&output=embed">
+            </iframe>
+          </div>
+
+          <!-- QR Mobile -->
+          <div class="my-6 md:hidden text-center bg-white p-4 rounded-lg shadow">
+            <img
+              id="qrImage"
+              src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_payment.jpg"
+              class="w-40 mx-auto rounded"
+            />
+            <p class="text-sm mt-2 font-semibold">Quét QR để thanh toán</p>
+            <a
+              id="downloadQR"
+              href="https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_payment.jpg"
+              download="QR_HungKy.jpg"
+              class="mt-3 inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-[#3b1c17] font-semibold text-sm px-5 py-2 rounded-full transition-colors"
+              onclick="downloadQR(event)"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+              </svg>
+              Tải mã QR
+            </a>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function checkOpenStatus() {
+        const now = new Date();
+        const vnTime = new Date(
+          now.toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" })
+        );  
+
+        const hour = vnTime.getHours();
+        const minute = vnTime.getMinutes();
+
+        const statusEl = document.getElementById("openStatus");
+
+        const isOpen =
+          (hour > 17 || (hour === 17 && minute >= 30)) && hour < 23;
+
+        if (isOpen) {
+          statusEl.textContent =
+            "🟢 Đang mở cửa (17:30 - 23:00) - Open (17:30 - 23:00)";
+          statusEl.className = "text-green-600 font-semibold";
+        } else {
+          statusEl.textContent =
+            "🔴 Đã đóng cửa (Mở lại lúc 17:30) - Closed (Opens at 17:30)";
+          statusEl.className = "text-red-600 font-semibold";
+        }
+      }
+
+      checkOpenStatus();
+      setInterval(checkOpenStatus, 60000);
+
+      async function downloadQR(e) {
+        e.preventDefault();
+        const url = "https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_payment.jpg";
+        try {
+          const response = await fetch(url);
+          const blob = await response.blob();
+          const blobUrl = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = blobUrl;
+          a.download = "QR_HungKy.jpg";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(blobUrl);
+        } catch (err) {
+          window.open(url, "_blank");
+        }
+      }
+    </script>
+  </body>
+</html>
