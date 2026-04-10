@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quán Hưng Ký</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f3ece4] text-[#3b1c17] text-base md:text-lg">
+    <!-- QR Desktop -->
+    <div class="hidden md:block fixed right-6 top-6 bg-white p-3 rounded-lg shadow text-center">
+      <img
+        id="qrImage"
+        src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_ynl1nn.jpg"
+        class="w-36 md:w-28 mx-auto"
+      />
+      <p class="text-xs mt-2 font-semibold">Quét QR / Scan to pay</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <!-- Header -->
+      <section class="text-center py-6 md:py-8">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-widest">
+          QUÁN HƯNG KÝ
+        </h1>
+        <p class="text-sm md:text-xl text-gray-600">
+          Hủ Tiếu - Mì Xíu - Phở (Rice Noodles • Noodles • Pho)
+        </p>
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-8 md:gap-10 mt-4">
+        <!-- MAIN -->
+        <div>
+          <div class="bg-yellow-400 inline-block px-4 py-2 font-bold mb-4">
+            MÓN CHÍNH / MAIN DISHES
+          </div>
+
+          <div class="space-y-6">
+
+            <!-- Mì Xíu -->
+            <div class="border-b pb-4">
+              <div class="text-xl md:text-2xl font-bold">
+                Mì Xíu (Khô / Nước)
+                <span class="text-gray-500 italic text-sm md:text-lg">(Egg Noodles with Char Siu - Dry / Soup)</span>
+              </div>
+
+              <div class="text-xs md:text-sm text-gray-600 mt-1">
+                Bao gồm: Thịt xíu, hoành thánh, hành phi, hành lá, rau sống, giá đỗ
+                <br />
+                (Char siu, wonton, fried shallots, scallions, fresh vegetables, bean sprouts)
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">KHÔ (DRY)</p>
+                  <p>Tô nhỏ: 30k</p>
+                  <p>Tô lớn: 35k</p>
+                </div>
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">NƯỚC (SOUP)</p>
+                  <p>Tô nhỏ: 30k</p>
+                  <p>Tô lớn: 35k</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hủ Tiếu -->
+            <div class="border-b pb-4">
+              <div class="text-xl md:text-2xl font-bold">
+                Hủ Tiếu (Khô / Nước)
+                <span class="text-gray-500 italic text-sm md:text-lg">(Rice Noodles - Dry / Soup)</span>
+              </div>
+
+              <div class="text-xs md:text-sm text-gray-600 mt-1">
+                Bao gồm: Thịt xíu, xương heo có thịt, hành phi, hành lá, rau sống, giá đỗ
+                <br />
+                (Char siu, meaty pork bones, fried shallots, scallions, fresh vegetables, bean sprouts)
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">KHÔ (DRY)</p>
+                  <p>Tô nhỏ: 30k</p>
+                  <p>Tô lớn: 35k</p>
+                </div>
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">NƯỚC (SOUP)</p>
+                  <p>Tô nhỏ: 30k</p>
+                  <p>Tô lớn: 35k</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phở -->
+            <div class="border-b pb-4">
+              <div class="text-xl md:text-2xl font-bold">
+                Phở
+                <span class="text-gray-500 italic text-sm md:text-lg">(Pho)</span>
+              </div>
+
+              <div class="text-xs md:text-sm text-gray-600 mt-1">
+                Phở Nước: Tái, nạm, bò viên, hành lá, rau sống, giá đỗ
+                <br />
+                (Rare beef, brisket, beef balls, scallions, fresh vegetables, bean sprouts)
+                <br /><br />
+                Phở Khô: Giống hủ tiếu khô
+                <br />
+                (Served like dry rice noodles with char siu, meaty pork bones, fried shallots, scallions, fresh vegetables, bean sprouts)
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">KHÔ (DRY)</p>
+                  <p>Tô nhỏ: 30k</p>
+                  <p>Tô lớn: 35k</p>
+                </div>
+                <div class="border p-3 bg-white rounded">
+                  <p class="font-bold">NƯỚC (SOUP)</p>
+                  <p>Tô nhỏ: 30k</p>
+                  <p>Tô lớn: 35k</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXTRA giữ nguyên -->
+        <div>
+          <div class="bg-yellow-400 inline-block px-4 py-2 font-bold mb-4">
+            THÊM / EXTRA
+          </div>
+
+          <div class="space-y-3">
+            <div class="flex justify-between border-b pb-2">
+              <span>Hoành thánh (Wonton)</span>
+              <span>10k / 3 cục (pcs)</span>
+            </div>
+
+            <div class="flex justify-between border-b pb-2">
+              <span>Bò viên (Beef balls)</span>
+              <span>10k / 3 cục (pcs)</span>
+            </div>
+
+            <div class="flex justify-between border-b pb-2">
+              <span>Xương (Meaty pork bones)</span>
+              <span>10k / 1 cục (pcs)</span>
+            </div>
+
+            <div class="flex justify-between border-b pb-2">
+              <span>Tái (Rare beef)</span>
+              <span>10k</span>
+            </div>
+
+            <div class="flex justify-between border-b pb-2">
+              <span>Nạm (Brisket)</span>
+              <span>10k</span>
+            </div>
+
+            <div class="flex justify-between border-b pb-2">
+              <span>Thịt xíu (Char siu meat)</span>
+              <span>10k</span>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="mt-6">
+            <iframe
+              class="w-full h-72 rounded-lg shadow"
+              src="https://www.google.com/maps?q=16.058063,108.2170171&z=18&output=embed"
+            ></iframe>
+          </div>
+
+          <!-- Mobile QR --> 
+           <div class="my-6 md:hidden text-center bg-white p-4 rounded-lg shadow"> 
+            <img src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_ynl1nn.jpg" class="w-40 mx-auto rounded" /> 
+            <p class="text-sm mt-2 font-semibold">Quét QR / Scan to pay</p> 
+            <button onclick="downloadQR()" class="mt-3 bg-yellow-400 px-4 py-2 text-sm rounded font-semibold shadow" > 
+              Tải mã QR
+            </button> 
+          </div>
+
+          <!-- Banner Desktop only -->
+          <div class="mt-6 hidden md:block">
+            <img
+              src="https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796087/noodle_i5ccj0.webp"
+              class="rounded-lg shadow w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      async function downloadQR() {
+        const url =
+          "https://res.cloudinary.com/dhni2gh0u/image/upload/v1775796089/qr_ynl1nn.jpg";
+
+        try {
+          const response = await fetch(url);
+          const blob = await response.blob();
+
+          const blobUrl = window.URL.createObjectURL(blob);
+
+          const link = document.createElement("a");
+          link.href = blobUrl;
+          link.download = "qr-payment.jpg";
+
+          document.body.appendChild(link);
+          link.click();
+
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(blobUrl);
+        } catch (err) {
+          alert("Không thể tải QR, vui lòng thử lại!");
+        }
+      }
+    </script>
+  </body>
+</html>
